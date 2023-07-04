@@ -1,6 +1,5 @@
 package io.github.diegomardu.springboot.models;
 
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.UUID;
 
@@ -17,9 +16,7 @@ import lombok.Data;
 @Entity
 @Table(name = "TB_PRODUCTS")
 @Data
-public class ProductModel extends RepresentationModel<ProductModel> implements Serializable{
-
-	private static final long serialVersionUID = 1L;
+public class ProductModel extends RepresentationModel<ProductModel>{
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
